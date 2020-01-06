@@ -2,3 +2,4 @@
 
 <%= image_tag('grumpy.jpg', class: 'logo', alt: 'Cats') %>
 <h5 class="muted"><%= @hostname %></h5>
+<h5>Visitors: <%= pluralize(@total_hits, 'time') %></h5>
