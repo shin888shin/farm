@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :crops
   resources :animals
-  root 'animals#index'
+  root 'pages#home'
+  get '/health_check' => 'pages#health_check'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
