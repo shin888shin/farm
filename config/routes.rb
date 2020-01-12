@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :assets
   resources :crops
   resources :animals
   root 'pages#home'
