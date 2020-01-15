@@ -25,6 +25,7 @@ COPY Gemfile Gemfile
 # potentially other binaries as command overrides without depending on
 # bundle exec.
 RUN bundle install --binstubs
+# RUN bundle binstubs bundler --force
 
 # Copy in the application code from your work station at the current directory
 # over to the working directory.
