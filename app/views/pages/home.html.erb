@@ -1,15 +1,15 @@
-<h2>My farm animals and crops</h2>
+<h2>Farm</h2>
 <br />
 <% if Asset.where(name: 'Animal').count > 0 %>
   <h3>
-    Total Animals
+    Animals:
     <span><%= @total_animals_count %></span>
   </h3>
 <% end %>
 
 <% if Asset.where(name: 'Crop').count > 0 %>
   <h3>
-    Total Crops
+    Crops:
     <span>
       <%= Asset.where(name: 'Crop').order('created_at desc').limit(1).first.count %>
     </span>
